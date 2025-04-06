@@ -6,20 +6,100 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8B8616382DA1EF20007936C0 /* Intervalzwatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B86162E2DA1EF1F007936C0 /* Intervalzwatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B8616362DA1EF20007936C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B8616142DA1EE7D007936C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B86162D2DA1EF1F007936C0;
+			remoteInfo = "Intervalzwatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B86163C2DA1EF20007936C0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8B8616382DA1EF20007936C0 /* Intervalzwatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8B86161C2DA1EE7D007936C0 /* Intervalz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intervalz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B86162E2DA1EF1F007936C0 /* Intervalzwatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intervalzwatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8B2D2AA82DA2221C00BAB499 /* Exceptions for "Intervalz" folder in "Intervalzwatch Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Interval+CoreDataClass.swift",
+				"Interval+CoreDataProperties.swift",
+				"IntervalGroup+CoreDataClass.swift",
+				"IntervalGroup+CoreDataProperties.swift",
+				Persistence.swift,
+				"Workout+CoreDataClass.swift",
+				"Workout+CoreDataProperties.swift",
+			);
+			target = 8B86162D2DA1EF1F007936C0 /* Intervalzwatch Watch App */;
+		};
+		8B8616512DA201E6007936C0 /* Exceptions for "Intervalz" folder in "Intervalz" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				Intervalz.xcdatamodeld,
+			);
+			target = 8B86161B2DA1EE7D007936C0 /* Intervalz */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		8B2D2A932DA211EF00BAB499 /* Exceptions for "Intervalz" folder in "Copy Bundle Resources" phase from "Intervalz" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 8B86161A2DA1EE7D007936C0 /* Resources */;
+			membershipExceptions = (
+				Intervalz.xcdatamodeld,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8B86161E2DA1EE7D007936C0 /* Intervalz */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8B8616512DA201E6007936C0 /* Exceptions for "Intervalz" folder in "Intervalz" target */,
+				8B2D2A932DA211EF00BAB499 /* Exceptions for "Intervalz" folder in "Copy Bundle Resources" phase from "Intervalz" target */,
+				8B2D2AA82DA2221C00BAB499 /* Exceptions for "Intervalz" folder in "Intervalzwatch Watch App" target */,
+			);
 			path = Intervalz;
+			sourceTree = "<group>";
+		};
+		8B86162F2DA1EF1F007936C0 /* Intervalzwatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Intervalzwatch Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8B8616192DA1EE7D007936C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B86162B2DA1EF1F007936C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8B86161E2DA1EE7D007936C0 /* Intervalz */,
+				8B86162F2DA1EF1F007936C0 /* Intervalzwatch Watch App */,
 				8B86161D2DA1EE7D007936C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8B86161C2DA1EE7D007936C0 /* Intervalz.app */,
+				8B86162E2DA1EF1F007936C0 /* Intervalzwatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +137,12 @@
 				8B8616182DA1EE7D007936C0 /* Sources */,
 				8B8616192DA1EE7D007936C0 /* Frameworks */,
 				8B86161A2DA1EE7D007936C0 /* Resources */,
+				8B86163C2DA1EF20007936C0 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B8616372DA1EF20007936C0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8B86161E2DA1EE7D007936C0 /* Intervalz */,
@@ -68,6 +152,28 @@
 			);
 			productName = Intervalz;
 			productReference = 8B86161C2DA1EE7D007936C0 /* Intervalz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B86162D2DA1EF1F007936C0 /* Intervalzwatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B8616392DA1EF20007936C0 /* Build configuration list for PBXNativeTarget "Intervalzwatch Watch App" */;
+			buildPhases = (
+				8B86162A2DA1EF1F007936C0 /* Sources */,
+				8B86162B2DA1EF1F007936C0 /* Frameworks */,
+				8B86162C2DA1EF1F007936C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8B86162F2DA1EF1F007936C0 /* Intervalzwatch Watch App */,
+			);
+			name = "Intervalzwatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Intervalzwatch Watch App";
+			productReference = 8B86162E2DA1EF1F007936C0 /* Intervalzwatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +187,9 @@
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					8B86161B2DA1EE7D007936C0 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					8B86162D2DA1EF1F007936C0 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
@@ -100,12 +209,20 @@
 			projectRoot = "";
 			targets = (
 				8B86161B2DA1EE7D007936C0 /* Intervalz */,
+				8B86162D2DA1EF1F007936C0 /* Intervalzwatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8B86161A2DA1EE7D007936C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B86162C2DA1EF1F007936C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +239,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B86162A2DA1EF1F007936C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B8616372DA1EF20007936C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B86162D2DA1EF1F007936C0 /* Intervalzwatch Watch App */;
+			targetProxy = 8B8616362DA1EF20007936C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8B8616252DA1EE7F007936C0 /* Debug */ = {
@@ -249,10 +381,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Intervalz/Intervalz.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GW98F9MH92;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Intervalz/Info.plist;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "to allow IOS app usage of health records";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To allow IOS app to update description from workouts";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To allow IOS app to update usage description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -276,10 +414,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Intervalz/Intervalz.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GW98F9MH92;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Intervalz/Info.plist;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "to allow IOS app usage of health records";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To allow IOS app to update description from workouts";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To allow IOS app to update usage description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,6 +439,74 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B86163A2DA1EF20007936C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Intervalzwatch Watch App/Intervalzwatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GW98F9MH92;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Intervalzwatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Intervalzwatch;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "To allow watch usage of health records for workouts";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To allow watch share of health records for workouts";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To allow watch to update of health records for workouts";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Davis.inc.Intervalz;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Davis.inc.Intervalz.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		8B86163B2DA1EF20007936C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Intervalzwatch Watch App/Intervalzwatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GW98F9MH92;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Intervalzwatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Intervalzwatch;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "To allow watch usage of health records for workouts";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To allow watch share of health records for workouts";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To allow watch to update of health records for workouts";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Davis.inc.Intervalz;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Davis.inc.Intervalz.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
 			};
 			name = Release;
 		};
@@ -315,6 +527,15 @@
 			buildConfigurations = (
 				8B8616282DA1EE7F007936C0 /* Debug */,
 				8B8616292DA1EE7F007936C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B8616392DA1EF20007936C0 /* Build configuration list for PBXNativeTarget "Intervalzwatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B86163A2DA1EF20007936C0 /* Debug */,
+				8B86163B2DA1EF20007936C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

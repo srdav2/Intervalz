@@ -6,19 +6,21 @@
 //
 
 import SwiftUI
+import CoreData // Import CoreData
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) private var viewContext // Access context
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        // Display the WorkoutListView as the main view for the watch app
+        WorkoutListView()
+            .environment(\.managedObjectContext, viewContext) // Pass context down
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
+    }
 }
