@@ -249,8 +249,8 @@ class WorkoutSessionManager: NSObject, ObservableObject, HKWorkoutSessionDelegat
 
     // MARK: - Haptics
     private func playHapticFeedback() {
-        // Play a distinct haptic to signal phase end
-        WKInterfaceDevice.current().play(.success)
+        WKInterfaceDevice.current().play(.notification) // Or .success, .failure, etc.
+        print("Played haptic feedback") // For debugging
     }
 
     // MARK: - HKWorkoutSessionDelegate Methods
